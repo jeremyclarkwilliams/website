@@ -1,9 +1,12 @@
 readme*
 
-favicon*
-
 gulp/node_modules/
 
-styles/css/maps/
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 .DS_Store
+
+favicon*
