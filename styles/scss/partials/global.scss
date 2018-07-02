@@ -19,6 +19,7 @@ body {
         bottom: 0;
         content: '';
         left: 0;
+        pointer-events: none;
         position: fixed;
         right: 0;
         top: 0;
@@ -34,8 +35,23 @@ h6 {
     font-weight: normal;
 }
 
-p {
+p,
+li {
     line-height: 1.5;
+    margin: 0 0 2rem;
+}
+
+a {
+    border-bottom: 1px solid $pink;
+    color: $pink;
+    opacity: 1;
+    text-decoration: none;
+    transition: opacity .25s;
+
+    &:hover,
+    &:focus {
+        opacity: .5;
+    }
 }
 
 .heading {
@@ -66,13 +82,69 @@ p {
     padding: 8rem 20%;
     text-align: center;
 
+    .heading {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &.section-links {
+        background: $cream;
+        color: $black;
+        font-weight: 500;
+    }
+
     &.section-about {
         background: $purple;
         color: $white;
+        font-weight: 300;
 
         .heading {
             color: $lightorange;
-            font-size: 5rem;
         }
+    }
+
+    &.section-education {
+        background: $cream;
+        color: $black;
+        font-weight: 500;
+
+        .heading {
+            color: $purple;
+        }
+    }
+
+    &.section-experience {
+        background: $purple;
+        color: $white;
+        font-weight: 300;
+        text-align: left;
+
+        .heading {
+            color: $lightorange;
+        }
+    }
+
+    &.section-skills {
+        background: $cream;
+        color: $black;
+        font-weight: 500;
+
+        .heading {
+            color: $purple;
+        }
+    }
+}
+
+.job {
+    margin-bottom: 6rem;
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .date {
+        float: right;
+        font-style: italic;
     }
 }
