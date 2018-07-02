@@ -1,0 +1,40 @@
+html {
+    font: 6px/1 $font-secondary;
+}
+
+body {
+    background: $white;
+    padding: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.3;
+}
+
+.main-header {
+    background: linear-gradient( 135deg, $pink 0%, $orange 100% );
+    padding: 4rem;
+    text-align: center;
+
+    .heading {
+        color: $white;
+        font-family: $font-primary;
+        font-size: 7rem;
+        margin: 0 auto;
+
+        img {
+            margin-right: 5rem;
+            vertical-align: middle;
+            width: 10rem;
+        }
+    }
+}

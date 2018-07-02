@@ -19,10 +19,10 @@
                 }
             };
 
-    document.getElementById('back-to-top').onclick = function(e) {
-        e.preventDefault();
-        this.blur();
-        scrollInterval = setInterval(function() { scroller(0); }, 20);
-    }
+    // document.getElementById('back-to-top').onclick = function(e) {
+    //     e.preventDefault();
+    //     this.blur();
+    //     scrollInterval = setInterval(function() { scroller(0); }, 20);
+    // }
 
 })();

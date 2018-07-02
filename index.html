@@ -3,20 +3,20 @@
 
 <head>
     <title>Jeremy Williams - Web Development</title>
+
     <meta name="description" content="An innovative, customer-focused, analytical front-end developer, with a background in art &amp; design, offering over eight years of experience." />
     <meta name="author" content="Jeremy Williams" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="lnKQvjOEA9lr0x4PZXquKda1sBFgbOVSBM53GQFycVk" />
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles/css/app.css" rel="stylesheet" />
 
     <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
     <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
-
     <link rel="apple-touch-icon" href="favicon-120.png"> <!-- 120px -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
@@ -27,227 +27,17 @@
 
 <body>
 
-    <div class="container" id="container">
+    <header class="main-header">
+        <h1 class="heading"><img src="images/logo.png" alt="Logo" />Jeremy Williams</h1>
+    </header>
 
-        <header>
-            <h1 class="main-title">Jeremy Williams</h1>
-            <h2 class="main-desc">Web Development</h2>
-            <ul class="main-links">
-                <li class="main-link"><a href="mailto:jeremy@jeremyclarkwilliams.com" class="fa fa-envelope-o has-tip"><span class="tooltip">Send Email</span></a></li>
-                <li class="main-link"><a href="https://www.linkedin.com/in/jwllms" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin has-tip"><span class="tooltip">View LinkedIn Profile</span></a></li>
-                <li class="main-link"><a href="https://github.com/jeremyclarkwilliams" target="_blank" rel="noopener noreferrer" class="fa fa-github has-tip"><span class="tooltip">View GitHub Profile</span></a></li>
-                <li class="main-link"><a href="files/jeremy-williams-resume-public.pdf" target="_blank" rel="noopener noreferrer" class="fa fa-file-text-o has-tip"><span class="tooltip">View Resume PDF</span></a></li>
-            </ul>
-        </header>
 
-        <section class="about">
-            <h3 class="hdr"><i class="fa fa-bicycle hdr-icon"></i><span class="hdr-text">About Me</span></h3>
-            <p class="text">An innovative, customer-focused, analytical front-end developer, with a background in art &amp; design, offering over eight years of experience.</p>
-            <p class="text">Passion for clean, consistent, modular, and semantic UI development, with a drive to learn and quickly adapt to new technologies and frameworks.</p>
-            <p class="text">Known for excellent problem-solving skills, with the ability to discover well-researched, efficient, and swift solutions depending on environment and style desired.</p>
-            <p class="text">Currently seeking full-time, mid-to-senior level, front-end and freelance development/engineering opportunities.</p>
-            <p class="text">Available for cycling, movie discussion, board games, live music, and escape rooms.</p>
-            <p class="text">Based in Los Angeles, CA.</p>
-        </section>
-
-        <section class="education">
-            <h3 class="hdr"><i class="fa fa-graduation-cap hdr-icon"></i><span class="hdr-text">Education</span></h3>
-            <p class="text">Cornell University, College of Architecture, Art, and Planning, Ithaca NY</p>
-            <p class="text">Bachelor of Fine Arts, dual concentration in painting and printmaking</p>
-        </section>
-
-        <section class="work">
-            <h3 class="hdr"><i class="fa fa-briefcase hdr-icon"></i><span class="hdr-text"><span class="xs-hide">Professional </span>Experience</span></h3>
-
-            <article class="job">
-                <h4 class="job-title">Front-End Software Engineer, Zoe Media Group <span class="job-date">August 2017 - May 2018</span></h4>
-                <ul class="job-tasks">
-                    <li>implemented site-wide redesign of The Zoe Report – MVP completed in 4 weeks, further updates completed 3 weeks later</li>
-                    <li>maintained and enhanced front-end templates for Rachel Zoe’s online properties: The Zoe Report, Box of Style, Shop Rachel Zoe</li>
-                    <li>converted Box of Style checkout page to two-step process, streamlining design and user experience</li>
-                    <li>revamped Box of Style add-ons page in subscription checkout flow</li>
-                    <li>tech stack: PHP, SASS, jQuery, Wordpress, GitHub</li>
-                    <li>Online publication: <a href="https://thezoereport.com/" target="_blank" rel="noopener noreferrer">thezoereport.com</a></li>
-                    <li>Seasonal subscription product: <a href="https://boxofstyle.com/" target="_blank" rel="noopener noreferrer">boxofstyle.com</a></li>
-                    <li>E-commerce site: <a href="https://shoprachelzoe.com/" target="_blank" rel="noopener noreferrer">shoprachelzoe.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, MGX Creative <span class="job-date">Winter 2018</span></h4>
-                <ul class="job-tasks">
-                    <li>Company/portfolio site to showcase client’s videography, photography, and information</li>
-                    <li>HTML, SASS, jQuery, PHP, with Wordpress</li>
-                    <li><a href="https://mgxcreative.com" target="_blank" rel="noopener noreferrer">mgxcreative.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Front-End Engineer, Loot Crate <span class="job-date">November 2015 - April 2017</span></h4>
-                <ul class="job-tasks">
-                    <li>Loot Crate is an online subscription start up ranked as 2016’s fastest growing company by <a href="http://www.inc.com/magazine/201609/kate-rockwood/2016-inc5000-loot-crate.html" target="_blank" rel="noopener noreferrer">Inc. Magazine</a></li>
-                    <li>developed and implemented front-end from on-boarding to product purchase for new site and company endeavor, <a href="http://sportscrate.com" target="_blank" rel="noopener noreferrer">Sports Crate</a></li>
-                    <li>responsible for product page update that increased core subscription conversion rate by more than 10%</li>
-                    <li>developed semantic front-end modules and templates based on new designs and visual directions</li>
-                    <li>standardized styles and HTML structure in collaboration with UX/UI designers and other developers</li>
-                    <li>migrated templates and content site-wide from Alchemy CMS to Contentful CMS</li>
-                    <li>created and modified CMS templates, enabling easy updates and content-specific campaigns</li>
-                    <li>implemented and advised on A/B/n tests across site</li>
-                    <li>updated <a href="https://www.lootcrate.com/notfound"  target="_blank" rel="noopener noreferrer">404 page</a> with a delightful, custom, Space Invaders-inspired game</li>
-                    <li>tech stack: Ruby on Rails, CoffeeScript, SASS, Bootstrap, jQuery, GitHub</li>
-                    <li><a href="http://lootcrate.com" target="_blank" rel="noopener noreferrer">lootcrate.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, Mindsoil <span class="job-date">Summer/Fall 2015</span></h4>
-                <ul class="job-tasks">
-                    <li>HTML, CSS, jQuery based on client’s design (Phase One)</li>
-                    <li>React and PHP form handling</li>
-                    <li>fluid and responsive layout for Desktop, Tablet, and Mobile</li>
-                    <li>Phase Two to allow client login and UI panel, including file upload and download</li>
-                    <li><a href="https://github.com/jeremyclarkwilliams/mindsoil-admin" target="_blank" rel="noopener noreferrer">MEAN app exploration</a> for custom Admin content management system</li>
-                    <li><a href="https://github.com/jeremyclarkwilliams/mindsoil-client" target="_blank" rel="noopener noreferrer">React exploration</a> for custom Client file management system</li>
-                    <li><a href="http://mindsoil.com" target="_blank" rel="noopener noreferrer">mindsoil.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Front-End Developer, Ticketmaster | Live Nation <span class="job-date">September 2009 - April 2015</span></h4>
-                <ul class="job-tasks">
-                    <li>developed advanced, seamless prototypes of future products for internal and user testing with JavaScript and jQuery</li>
-                    <li>created and developed integral updates to front-end templates for Ticketmaster’s 2015 reskin, 2013/14 revamp of event detail pages and 2010 rebrand, Live Nation’s 2010 redesign, Account Manager product</li>
-                    <li>spearheaded development of A/B/n tests across sites using Optimizely and Maxymiser</li>
-                    <li>managed close-knit relationships with designers on fluid and static pages using HTML, CSS, JavaScript</li>
-                    <li>recipient of internal "Rock Star" (2012) and "Golden Gate" (2014) achievements, acknowledging above-and-beyond performance among hundreds of employees</li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, Davina Chatkeon <span class="job-date">Summer 2014</span></h4>
-                <ul class="job-tasks">
-                    <li>HTML, CSS, JavaScript, PHP, MYSQL portfolio site based on client’s design</li>
-                    <li>custom back-end scripts to allow for client to easily update projects, with aggregate pages reflecting changes</li>
-                    <li>created custom touch-friendly carousel for homepage</li>
-                    <li>responsive layout for Desktop, Tablet, and Mobile with higher pixel density displays in mind</li>
-                    <li><a href="http://www.davinachatkeon.com" target="_blank" rel="noopener noreferrer">davinachatkeon.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, Fuller &amp; Williamson <span class="job-date">Fall 2014</span></h4>
-                <ul class="job-tasks">
-                    <li>built single-page website using HTML, CSS, JavaScript</li>
-                    <li>responsive layout for Desktop, Tablet, and Mobile with higher pixel density displays in mind</li>
-                    <li><a href="http://www.fullerandwilliamson.com" target="_blank" rel="noopener noreferrer">fullerandwilliamson.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Wordpress Developer, Ali Larter <span class="job-date">Fall 2014</span></h4>
-                <ul class="job-tasks">
-                    <li>extensive custom Wordpress theme based on client’s design</li>
-                    <li>integrated Facebook login, client Twitter and Instagram display, and subscription functionalities</li>
-                    <li>responsive layout for Desktop, Tablet, and Mobile</li>
-                    <li><a href="http://www.alilarter.com" target="_blank" rel="noopener noreferrer">alilarter.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, Tunelize <span class="job-date">Fall 2014</span></h4>
-                <ul class="job-tasks">
-                    <li>HTML, CSS, JavaScript based on client’s design</li>
-                    <li>custom JavaScript music player, <a href="/_tunelize/equalizer.html" target="_blank" rel="noopener noreferrer">equalizer</a> graphic response to player, and various carousels</li>
-                    <li>fluid and responsive layout for Desktop and Tablet</li>
-                    <li><a href="/_tunelize" target="_blank" rel="noopener noreferrer">tunelize.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, JobSync <span class="job-date">Summer 2013</span></h4>
-                <ul class="job-tasks">
-                    <li>built website using HTML, CSS, JavaScript, PHP</li>
-                    <li>coded jQuery-based AJAX contact forms</li>
-                    <li>dynamically integrated two most recent company tweets into homepage</li>
-                    <li><a href="/_jobsync/13/6.19.13" target="_blank" rel="noopener noreferrer">jobsync.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Designer/Developer, Williams Flooring <span class="job-date">Summer 2013</span></h4>
-                <ul class="job-tasks">
-                    <li>designed single page layout with Photoshop</li>
-                    <li>built website using HTML, CSS, JavaScript, PHP</li>
-                    <li>coded jQuery-based AJAX contact form</li>
-                    <li>integrated HTML5 video</li>
-                    <li><a href="/_williamsflooring" target="_blank" rel="noopener noreferrer">williams-flooring.com</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, PartyTapper <span class="job-date">Winter 2013</span></h4>
-                <ul class="job-tasks">
-                    <li>coded front-end of all pages using HTML, CSS, JavaScript based on client’s designs</li>
-                    <li>created basic parallax scrolling landing page</li>
-                    <li>pages: <a href="/_partytapper/0landing.html" target="_blank" rel="noopener noreferrer">Landing</a>, <a href="/_partytapper/1home.html" target="_blank" rel="noopener noreferrer">Home</a>, <a href="/_partytapper/3event.html" target="_blank" rel="noopener noreferrer">Event</a>, <a href="/_partytapper/4features.html" target="_blank" rel="noopener noreferrer">Features</a>, <a href="/_partytapper/5mobile2.html" target="_blank" rel="noopener noreferrer">Mobile Info</a>, <a href="/_partytapper/9host.html" target="_blank" rel="noopener noreferrer">Host</a></li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Freelance Developer, Cicilia Teng, Designer/Photographer <span class="job-date">Summer 2012 | Winter 2013</span></h4>
-                <ul class="job-tasks">
-                    <li>coded sites using HTML, CSS, JavaScript based on client’s design</li>
-                    <li>created custom back-end system using PHP, MySQL for client to login and update project pages herself</li>
-                    <li>created custom Wordpress template based on client’s design</li>
-                    <!--<li><a href="http://www.ciciliateng.com/design" target="_blank" rel="noopener noreferrer">ciciliateng.com/design</a></li>-->
-                    <li><a href="http://www.mooncici.com" target="_blank" rel="noopener noreferrer">mooncici.com</a></li>
-                    <!--<li><a href="http://mooncici.com/ohheylife/" target="_blank" rel="noopener noreferrer">mooncici.com/ohheylife</a></li>-->
-                </ul>
-            </article>
-
-            <article class="job">
-                <h4 class="job-title">Designer/Developer, blik Surface Graphics <span class="job-date">April 2005 - April 2009</span></h4>
-                <ul class="job-tasks">
-                    <li>maintained and made most updates to website, including adding new products to and maintaining e-commerce store as needed, creating landing pages with HTML, CSS, JavaScript, updating templates</li>
-                    <li>managed launches of highly successful Threadless tie-in products every 6 weeks, including conversion of artwork to viable wall graphic products, photography, addition to website, updating of voting page utilizing Poll Daddy online application, design and coding of entire mini-site using HTML, CSS and Photoshop</li>
-                    <li>created, coded, and published email newsletter (1-3 per month) using Photoshop and HTML</li>
-                    <li>coded pre-designed instructional video page with HTML, CSS, JavaScript</li>
-                    <li>produced popular Nintendo line of products, including package contents, package design, and design and coding of mini-site - <a href="http://www.whatisblik.com/nintendo/" target="_blank" rel="noopener noreferrer">whatisblik.com/nintendo/</a></li>
-                    <li>designed select custom projects for clients such as CheetahMail (Experian), Santa Monica Public Library, I AM 8-BIT Art Shows, and blik’s presence as part of the 2006 Cooper Hewitt Triennial, using Illustrator</li>
-                    <li>prepared artist work for production of commercially viable wall graphic products</li>
-                    <li><a href="http://www.whatisblik.com" target="_blank" rel="noopener noreferrer">whatisblik.com</a></li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="skills">
-            <h3 class="hdr"><i class="fa fa-code hdr-icon"></i><span class="hdr-text"><span class="xs-hide">Technical </span>Skills</span></h3>
-            <p class="text"><strong>Advanced:</strong> HTML, SASS/CSS, jQuery, image optimization, design-, detail-, and process-oriented, best practices for website accessibility, SEO, and HTML semantics, cross-browser and device consistency</p>
-            <p class="text"><strong>Intermediate:</strong> JavaScript, Ruby, Rails, CoffeeScript, PHP, Wordpress, MySQL, A/B site optimization with Optimizely and Maxymiser platforms, version control with GIT and SVN, Agile Scrum and Kanban processes, JIRA, Trello, Adobe Photoshop and Illustrator</p>
-            <p class="text"><strong>Basic:</strong> React, Angular, Gulp, Node, Express, MongoDB, Mongoose, Jasmine</p>
-            <p class="text">An Event Apart 2016, San Francisco, attendee</p>
-        </section>
-
-        <ul class="main-links links-bottom">
-            <li class="main-link"><a href="mailto:jeremy@jeremyclarkwilliams.com" class="fa fa-envelope-o has-tip"><span class="tooltip">Send Email</span></a></li>
-            <li class="main-link"><a href="https://www.linkedin.com/in/jwllms" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin has-tip"><span class="tooltip">View LinkedIn Profile</span></a></li>
-            <li class="main-link"><a href="https://github.com/jeremyclarkwilliams" target="_blank" rel="noopener noreferrer" class="fa fa-github has-tip"><span class="tooltip">View GitHub Profile</span></a></li>
-            <li class="main-link"><a href="files/jeremy-williams-resume-public.pdf" target="_blank" rel="noopener noreferrer" class="fa fa-file-text-o has-tip"><span class="tooltip">View Resume PDF</span></a></li>
-            <li class="main-link"><a href="#" class="fa fa-arrow-up has-tip" id="back-to-top"><span class="tooltip">Back to Top</span></a></li>
-        </ul>
-
-        <footer class="footer">
-            <?php date_default_timezone_set('America/Los_Angeles'); ?>
-            <p class="copy">ver 4.2 © <?php echo date("Y"); ?> Jeremy Williams</p>
-        </footer>
-
-    </div> <!-- .container -->
 
     <!-- Web Font Loader -->
     <script>
         WebFontConfig = {
             google: {
-                families: ['Open Sans Condensed:300,400', 'Montserrat']
+                families: ['Raleway:500,700', 'Galada']
             },
             timeout: 3000
         };
@@ -275,7 +65,7 @@
     <script src="https://use.fontawesome.com/bd0a590f40.js" async></script>
 
     <!-- Custom JavaScript -->
-    <script src="/scripts/app.js" async></script>
+    <script src="scripts/app.js" async></script>
 
 </body>
 
