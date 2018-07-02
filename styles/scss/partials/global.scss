@@ -1,10 +1,28 @@
 html {
     font: 6px/1 $font-secondary;
+    letter-spacing: 1px;
+    overflow: hidden;
 }
 
 body {
-    background: $white;
+    box-sizing: border-box;
+    height: 100vh;
     padding: 4rem;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &:after {
+        border: 4rem solid $white;
+        box-shadow: 0 0 0 1rem rgba($black, .1) inset;
+        box-sizing: border-box;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
 }
 
 h1,
@@ -17,24 +35,44 @@ h6 {
 }
 
 p {
-    line-height: 1.3;
+    line-height: 1.5;
+}
+
+.heading {
+    color: $white;
+    font-family: $font-primary;
+    letter-spacing: 0;
+    margin: 0 auto;
 }
 
 .main-header {
-    background: linear-gradient( 135deg, $pink 0%, $orange 100% );
+    background: linear-gradient(135deg, $pink 0%, $orange 100%);
     padding: 4rem;
     text-align: center;
 
     .heading {
-        color: $white;
-        font-family: $font-primary;
         font-size: 7rem;
-        margin: 0 auto;
 
         img {
             margin-right: 5rem;
             vertical-align: middle;
             width: 10rem;
+        }
+    }
+}
+
+.section {
+    font-size: 2.5rem;
+    padding: 8rem 20%;
+    text-align: center;
+
+    &.section-about {
+        background: $purple;
+        color: $white;
+
+        .heading {
+            color: $lightorange;
+            font-size: 5rem;
         }
     }
 }

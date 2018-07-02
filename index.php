@@ -31,13 +31,13 @@
         <h1 class="heading"><img src="images/logo.png" alt="Logo" />Jeremy Williams</h1>
     </header>
 
-
+    <?php include 'partials/about.php'; ?>
 
     <!-- Web Font Loader -->
     <script>
         WebFontConfig = {
             google: {
-                families: ['Raleway:500,700', 'Galada']
+                families: ['Raleway:300,700', 'Galada']
             },
             timeout: 3000
         };
