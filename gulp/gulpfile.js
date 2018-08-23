@@ -2,9 +2,9 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    babel = require('gulp-babel');
+    uglify = require('gulp-uglifyes'),
+    concat = require('gulp-concat');
+    // babel = require('gulp-babel');
 
 var cssDest = '../styles/css',
     mapsDest = './maps',

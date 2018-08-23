@@ -1,8 +1,12 @@
 // Global
-@import 'partials/variables';
-@import 'partials/normalize';
-// @import 'partials/reset';
-@import 'partials/global';
+@import 'global/variables';
+@import 'global/normalize';
+@import 'global/global';
+
+// Partials
+@import 'partials/links';
+@import 'partials/education';
+@import 'partials/experience';
 
 // Vendor
 // Use CDNs where possible

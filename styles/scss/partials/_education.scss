@@ -1,0 +1,12 @@
+.section-education {
+
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    img {
+        height: 100%;
+        justify-self: right;
+    }
+}

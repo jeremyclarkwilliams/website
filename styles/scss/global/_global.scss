@@ -38,19 +38,27 @@ h6 {
 p,
 li {
     line-height: 1.5;
-    margin: 0 0 2rem;
+    margin: 2rem 0 0;
+
+    &:first-child {
+        margin: 0;
+    }
 }
 
 a {
-    border-bottom: 1px solid $pink;
-    color: $pink;
+    border-bottom: 1px solid;
+    display: inline-block;
     opacity: 1;
     text-decoration: none;
-    transition: opacity .25s;
+    transition: all .25s;
 
     &:hover,
     &:focus {
-        opacity: .5;
+        // opacity: .5;
+        transform: skewX(-15deg) translateX(3px);
+        // margin-bottom: -3px;
+        // padding-bottom: 3px;
+        // transform: translateY(-2px);
     }
 }
 
@@ -77,74 +85,83 @@ a {
     }
 }
 
+.main-footer {
+    background: $brown;
+    color: $lightorange;
+    font-size: 2rem;
+    font-weight: $font-regular;
+    padding: 8rem;
+    text-align: center;
+}
+
 .section {
     font-size: 2.5rem;
     padding: 8rem 20%;
-    text-align: center;
+    text-align: left;
 
     .heading {
         font-size: 5rem;
         margin-bottom: 4rem;
-        text-align: center;
+        // text-align: center;
     }
 
-    &.section-links {
+    &--cream {
         background: $cream;
         color: $black;
-        font-weight: 500;
+        font-weight: $font-regular;
+
+        .heading {
+            color: $brown;
+        }
+
+        a {
+            border-color: $darkbrown;
+            color: $darkbrown;
+        }
     }
 
-    &.section-about {
+    &--purple {
         background: $purple;
         color: $white;
-        font-weight: 300;
+        font-weight: $font-light;
 
         .heading {
             color: $lightorange;
         }
-    }
 
-    &.section-education {
-        background: $cream;
-        color: $black;
-        font-weight: 500;
-
-        .heading {
-            color: $purple;
-        }
-    }
-
-    &.section-experience {
-        background: $purple;
-        color: $white;
-        font-weight: 300;
-        text-align: left;
-
-        .heading {
+        a {
+            border-color: $lightorange;
             color: $lightorange;
         }
     }
 
-    &.section-skills {
-        background: $cream;
-        color: $black;
-        font-weight: 500;
+    &--darkbrown {
+        background: $darkbrown;
+        color: $white;
+        font-weight: $font-light;
 
         .heading {
-            color: $purple;
+            color: $lightpink;
+        }
+
+        a {
+            border-color: $white;
+            color: $white;
         }
     }
-}
 
-.job {
-    margin-bottom: 6rem;
+    &--mint {
+        background: $mint;
+        color: $white;
+        font-weight: $font-light;
 
-    .title {
-        font-size: 3rem;
-    }
+        .heading {
+            color: $paleyellow;
+        }
 
-    .date {
-        float: right;
-        font-style: italic;
+        a {
+            border-color: $white;
+            color: $white;
+        }
     }
 }

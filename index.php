@@ -27,11 +27,12 @@
 
 <body>
 
-    <header class="main-header">
-        <h1 class="heading"><img src="images/logo.png" alt="Logo" />Jeremy Williams</h1>
-    </header>
+    <?php include 'partials/header.php'; ?>
 
-    <?php include 'partials/links.php'; ?>
+    <?php
+        $links_top = true;
+        include 'partials/links.php';
+    ?>
 
     <?php include 'partials/about.php'; ?>
 
@@ -40,6 +41,13 @@
     <?php include 'partials/experience.php'; ?>
 
     <?php include 'partials/skills.php'; ?>
+
+    <?php
+        $links_top = false;
+        include 'partials/links.php';
+    ?>
+
+    <?php include 'partials/footer.php'; ?>
 
     <!-- Web Font Loader -->
     <script>
