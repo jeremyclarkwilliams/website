@@ -85,15 +85,6 @@ a {
     }
 }
 
-.main-footer {
-    background: $brown;
-    color: $lightorange;
-    font-size: 2rem;
-    font-weight: $font-regular;
-    padding: 8rem;
-    text-align: center;
-}
-
 .section {
     font-size: 2.5rem;
     padding: 8rem 20%;
@@ -105,18 +96,33 @@ a {
         // text-align: center;
     }
 
+    &--brown {
+        background: $brown;
+        color: $white;
+        font-weight: $font-light;
+
+        .heading {
+            color: lighten($pink, 10%);
+        }
+
+        a {
+            border-color: lighten($pink, 40%);
+            color: lighten($pink, 40%);
+        }
+    }
+
     &--cream {
         background: $cream;
         color: $black;
         font-weight: $font-regular;
 
         .heading {
-            color: $brown;
+            color: saturate(lighten($brown, 20%), 20%);
         }
 
         a {
-            border-color: $darkbrown;
-            color: $darkbrown;
+            border-color: $brown;
+            color: $brown;
         }
     }
 
@@ -126,27 +132,12 @@ a {
         font-weight: $font-light;
 
         .heading {
-            color: $lightorange;
+            color: lighten($orange, 15%);
         }
 
         a {
-            border-color: $lightorange;
-            color: $lightorange;
-        }
-    }
-
-    &--darkbrown {
-        background: $darkbrown;
-        color: $white;
-        font-weight: $font-light;
-
-        .heading {
-            color: $lightpink;
-        }
-
-        a {
-            border-color: $white;
-            color: $white;
+            border-color: lighten($orange, 40%);
+            color: lighten($orange, 40%);
         }
     }
 
@@ -156,7 +147,7 @@ a {
         font-weight: $font-light;
 
         .heading {
-            color: $paleyellow;
+            color: lighten($orange, 30%);
         }
 
         a {
@@ -164,4 +155,13 @@ a {
             color: $white;
         }
     }
+}
+
+.main-footer {
+    background: saturate(lighten($brown, 20%), 10%);
+    color: lighten($orange, 30%);
+    font-size: 2rem;
+    font-weight: $font-regular;
+    padding: 12rem 8rem 4rem;
+    text-align: center;
 }

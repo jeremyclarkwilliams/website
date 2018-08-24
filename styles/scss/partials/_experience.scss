@@ -1,8 +1,16 @@
 .job {
+    border-top: 2px dashed rgba($black, .25);
     margin-bottom: 6rem;
+    padding-top: 6rem;
+
+    &:first-of-type {
+        border: 0 none;
+        padding: 0;
+    }
 
     .title {
         font-size: 3rem;
+        margin-top: 0;
     }
 
     .date {
