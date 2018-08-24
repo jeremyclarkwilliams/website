@@ -6,7 +6,7 @@
             <li><a href="//github.com/jeremyclarkwilliams">GitHub</a></li>
             <li><a href="files/jeremy-williams-resume-public.pdf">Resume</a></li>
             <?php if (!$links_top) : ?>
-            <li><a href="#" id="back-to-top">Back to Top</a></li>
+            <li class="hide-xs"><a href="#" id="back-to-top">Back to Top</a></li>
             <?php endif; ?>
         </ul>
     </div>

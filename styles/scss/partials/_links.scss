@@ -1,6 +1,10 @@
 .section-links {
     padding-bottom: 4rem;
     padding-top: 4rem;
+
+    @media (max-width: $screen-xs) {
+        padding: 2rem;
+    }
 }
 
 .links {
@@ -13,5 +17,9 @@
         display: inline;
         font-weight: $font-bold;
         margin: 0 2rem;
+
+        @media (max-width: $screen-xs) {
+            margin: 0 1rem;
+        }
     }
 }

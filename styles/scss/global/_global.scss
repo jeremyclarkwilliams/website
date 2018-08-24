@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 
+    @media (max-width: $screen-xs) {
+        padding: 2rem;
+    }
+
     &:after {
         border: 4rem solid $white;
         box-shadow: 0 0 0 1rem rgba($black, .1) inset;
@@ -23,6 +27,11 @@ body {
         position: fixed;
         right: 0;
         top: 0;
+
+        @media (max-width: $screen-xs) {
+            border-width: 2rem;
+            box-shadow: 0 0 0 .5rem rgba($black, .1) inset;
+        }
     }
 }
 
@@ -39,6 +48,10 @@ p,
 li {
     line-height: 1.5;
     margin: 2rem 0 0;
+
+    @media (max-width: $screen-xs) {
+        margin-top: 1rem;
+    }
 
     &:first-child {
         margin: 0;
@@ -74,13 +87,26 @@ a {
     padding: 4rem;
     text-align: center;
 
+    @media (max-width: $screen-xs) {
+        padding: 3rem;
+    }
+
     .heading {
         font-size: 7rem;
+
+        @media (max-width: $screen-xs) {
+            font-size: 4rem;
+        }
 
         img {
             margin-right: 5rem;
             vertical-align: middle;
             width: 10rem;
+
+            @media (max-width: $screen-xs) {
+                margin-right: 3rem;
+                width: 6rem;
+            }
         }
     }
 }
@@ -90,10 +116,24 @@ a {
     padding: 8rem 20%;
     text-align: left;
 
+    @media (max-width: $screen-lg) {
+        padding: 8rem 10%;
+    }
+
+    @media (max-width: $screen-xs) {
+        font-size: 2rem;
+        padding: 4rem;
+    }
+
     .heading {
         font-size: 5rem;
         margin-bottom: 4rem;
-        // text-align: center;
+
+        @media (max-width: $screen-xs) {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
     }
 
     &--brown {
@@ -164,4 +204,16 @@ a {
     font-weight: $font-regular;
     padding: 12rem 8rem 4rem;
     text-align: center;
+
+    @media (max-width: $screen-xs) {
+        font-size: 1.5rem;
+        padding: 4rem 2rem 2rem;
+    }
+}
+
+.hide-xs {
+
+    @media (max-width: $screen-xs) {
+        display: none !important;
+    }
 }
