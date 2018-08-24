@@ -22,8 +22,8 @@ gulp.task('sass', function() {
 });
 
 var jsDest = '../scripts',
-    jsWatch = '../scripts/js/**/*.js',
-    jsSources = ['../scripts/js/*.js'];
+    jsWatch = '../scripts/**/*.js',
+    jsSources = ['../scripts/vendor/*.js', '../scripts/js/*.js'];
 
 gulp.task('js', function() {
     gulp.src(jsSources)

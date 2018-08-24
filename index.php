@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="favicon-167.png">
 
-    <link rel="canonical" href="//www.jeremyclarkwilliams.com" />
+    <link rel="canonical" href="//jeremyclarkwilliams.com" />
 </head>
 
 <body>
@@ -35,11 +35,8 @@
     ?>
 
     <?php include 'partials/about.php'; ?>
-
     <?php include 'partials/education.php'; ?>
-
     <?php include 'partials/experience.php'; ?>
-
     <?php include 'partials/skills.php'; ?>
 
     <?php
@@ -49,36 +46,10 @@
 
     <?php include 'partials/footer.php'; ?>
 
-    <!-- Web Font Loader -->
-    <script>
-        WebFontConfig = {
-            google: {
-                families: ['Raleway:300,500,700', 'Galada']
-            },
-            timeout: 3000
-        };
-
-        (function(d) {
-            var wf = d.createElement('script'), s = d.scripts[0];
-            wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-            wf.async = true;
-            s.parentNode.insertBefore(wf, s);
-        })(document);
-    </script>
-
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-9695673-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <?php echo file_get_contents( 'images/icon-arrow-up.svg' ); ?>
 
     <!-- Font Awesome -->
-    <script src="//use.fontawesome.com/bd0a590f40.js" async></script>
+    <!-- <script src="//use.fontawesome.com/bd0a590f40.js" async></script> -->
 
     <!-- Custom JavaScript -->
     <script src="scripts/app.js" async></script>
