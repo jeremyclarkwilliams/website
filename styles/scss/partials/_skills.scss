@@ -1,0 +1,61 @@
+.table-skills {
+    width: 100%;
+
+    .level-10 {
+        float: right;
+    }
+
+    tr {
+
+        &:nth-child(even) {
+            background: rgba($black, .05);
+        }
+    }
+
+    th {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+
+    td {
+        padding: 3rem 3rem;
+    }
+
+    .skill-name,
+    .skill-level {
+
+    }
+
+    .skill-name {
+        padding-right: 4rem;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .skill-level {
+        width: 100%;
+
+        .bar {
+            background: linear-gradient(90deg, transparent 0%, $white 100%);
+            display: block;
+            font-size: 0;
+            height: 5 / 3 * 1rem;
+            max-width: calc(100% - 3rem);
+            position: relative;
+            width: 100%;
+
+            &:after {
+                border: .5rem solid $white;
+                border-radius: 50%;
+                box-sizing: border-box;
+                content: '';
+                height: 3.5rem;
+                position: absolute;
+                right: -3rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 3.5rem;
+            }
+        }
+    }
+}

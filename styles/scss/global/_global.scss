@@ -189,7 +189,7 @@ button {
 }
 
 .btn-top {
-    bottom: 4rem;
+    bottom: -7rem;
     font-size: 0;
     position: fixed;
     right: 8rem;
@@ -204,18 +204,23 @@ button {
         }
     }
 
+    &.show {
+        bottom: 4rem;
+
+        @media (max-width: $screen-xs) {
+            bottom: 2rem;
+        }
+    }
+
     @media (max-width: $screen-xs) {
-        bottom: 2rem;
         right: 4rem;
     }
 
     svg {
-        -webkit-filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) ); 
-            filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) );
+        @include filter-drop-shadow( -1rem -1rem 0 rgba($black, .1) );
 
         @media (max-width: $screen-xs) {
-            -webkit-filter: drop-shadow( -.5rem -.5rem 0 rgba($black, .1) ); 
-                filter: drop-shadow( -.5rem -.5rem 0 rgba($black, .1) );
+            @include filter-drop-shadow( -.5rem -.5rem 0 rgba($black, .1) );
         }
     }
 }
@@ -225,4 +230,12 @@ button {
     @media (max-width: $screen-xs) {
         display: none !important;
     }
+}
+
+.sr-only {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }

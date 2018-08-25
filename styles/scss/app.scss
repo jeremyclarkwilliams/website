@@ -1,5 +1,6 @@
 // Global
 @import 'global/variables';
+@import 'global/mixins';
 @import 'global/normalize';
 @import 'global/global';
 
@@ -9,6 +10,7 @@
 @import 'partials/links';
 @import 'partials/education';
 @import 'partials/experience';
+@import 'partials/skills';
 
 // Vendor
 // Use CDNs where possible
