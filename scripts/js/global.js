@@ -2,6 +2,7 @@
 
     // declare variables
     const $body = document.body;
+    const $btnTop = document.getElementById('back-to-top');
     let bodyScroll = $body.scrollTop;
 
     // basic scroll animation
@@ -21,9 +22,9 @@
         }
     }
 
-    document.getElementById('back-to-top').onclick = (e) => {
+    $btnTop.onclick = (e) => {
         e.preventDefault();
-        e.target.blur();
+        $btnTop.blur();
         scrollInterval = setInterval(() => { scroller(0); }, 20);
     }
 

@@ -11,6 +11,7 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
     @media (max-width: $screen-xs) {
         padding: 2rem;
@@ -73,6 +74,15 @@ a {
         // padding-bottom: 3px;
         // transform: translateY(-2px);
     }
+}
+
+button {
+    background: none;
+    border: 0 none;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
 }
 
 .heading {
@@ -208,6 +218,30 @@ a {
     @media (max-width: $screen-xs) {
         font-size: 1.5rem;
         padding: 4rem 2rem 2rem;
+    }
+}
+
+.btn-top {
+    bottom: 4rem;
+    font-size: 0;
+    position: fixed;
+    right: 8rem;
+    transition: all .25s;
+    z-index: 10;
+
+    &:hover,
+    &:focus {
+        transform: skewX(-15deg) translateX(5px);
+    }
+
+    @media (max-width: $screen-xs) {
+        bottom: 2rem;
+        right: 4rem;
+    }
+
+    svg {
+        -webkit-filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) ); 
+            filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) );
     }
 }
 

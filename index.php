@@ -29,24 +29,18 @@
 
     <?php include 'partials/header.php'; ?>
 
-    <?php
-        $links_top = true;
-        include 'partials/links.php';
-    ?>
+    <?php include 'partials/links.php'; ?>
 
     <?php include 'partials/about.php'; ?>
     <?php include 'partials/education.php'; ?>
     <?php include 'partials/experience.php'; ?>
     <?php include 'partials/skills.php'; ?>
 
-    <?php
-        $links_top = false;
-        include 'partials/links.php';
-    ?>
+    <?php include 'partials/links.php'; ?>
 
     <?php include 'partials/footer.php'; ?>
 
-    <?php echo file_get_contents( 'images/icon-arrow-up.svg' ); ?>
+    <button id="back-to-top" class="btn-top"><?php echo file_get_contents( 'images/icon-arrow-up.svg' ); ?></button>
 
     <!-- Font Awesome -->
     <!-- <script src="//use.fontawesome.com/bd0a590f40.js" async></script> -->
