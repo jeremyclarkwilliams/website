@@ -1,0 +1,13 @@
+.main-footer {
+    background: saturate(lighten($brown, 20%), 10%);
+    color: lighten($orange, 30%);
+    font-size: 2rem;
+    font-weight: $font-regular;
+    padding: 12rem 8rem 4rem;
+    text-align: center;
+
+    @media (max-width: $screen-xs) {
+        font-size: 1.5rem;
+        padding: 6rem 2rem 2rem;
+    }
+}

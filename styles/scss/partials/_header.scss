@@ -1,0 +1,28 @@
+.main-header {
+    background: linear-gradient(135deg, $pink 0%, $orange 100%);
+    padding: 4rem;
+    text-align: center;
+
+    @media (max-width: $screen-xs) {
+        padding: 3rem;
+    }
+
+    .heading {
+        font-size: 7rem;
+
+        @media (max-width: $screen-xs) {
+            font-size: 4rem;
+        }
+
+        img {
+            margin-right: 5rem;
+            vertical-align: middle;
+            width: 10rem;
+
+            @media (max-width: $screen-xs) {
+                margin-right: 3rem;
+                width: 6rem;
+            }
+        }
+    }
+}
