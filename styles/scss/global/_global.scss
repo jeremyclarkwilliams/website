@@ -2,12 +2,14 @@ html {
     font: 6px/1 $font-secondary;
     letter-spacing: 1px;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
     background: $white;
     padding: 4rem;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 
     @media (max-width: $screen-xs) {
         padding: 2rem;
@@ -64,11 +66,10 @@ a {
 
     &:hover,
     &:focus {
-        // opacity: .5;
-        transform: skewX(-15deg) translateX(3px);
-        // margin-bottom: -3px;
-        // padding-bottom: 3px;
-        // transform: translateY(-2px);
+
+        @media (hover: hover) {
+            transform: skewX(-15deg) translateX(3px);
+        }
     }
 }
 
@@ -127,8 +128,8 @@ button {
     }
 
     @media (max-width: $screen-xs) {
-        font-size: 2rem;
-        padding: 4rem;
+        font-size: 2.2rem;
+        padding: 6rem 4rem;
     }
 
     .heading {
@@ -146,6 +147,10 @@ button {
         background: $brown;
         color: $white;
         font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
 
         .heading {
             color: lighten($pink, 10%);
@@ -177,6 +182,10 @@ button {
         color: $white;
         font-weight: $font-light;
 
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
+
         .heading {
             color: lighten($orange, 15%);
         }
@@ -191,6 +200,10 @@ button {
         background: $mint;
         color: $white;
         font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
 
         .heading {
             color: lighten($orange, 30%);
@@ -213,7 +226,7 @@ button {
 
     @media (max-width: $screen-xs) {
         font-size: 1.5rem;
-        padding: 4rem 2rem 2rem;
+        padding: 6rem 2rem 2rem;
     }
 }
 
@@ -227,7 +240,10 @@ button {
 
     &:hover,
     &:focus {
-        transform: skewX(-15deg) translateX(5px);
+
+        @media (hover: hover) {
+            transform: skewX(-15deg) translateX(5px);
+        }
     }
 
     @media (max-width: $screen-xs) {
