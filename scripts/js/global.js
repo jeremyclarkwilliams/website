@@ -1,10 +1,10 @@
 (() => {
 
-    // declare variables
+    /* Back to Top Button and Scroll Animation */
+
     const $btnTop = document.getElementById('back-to-top'),
           btnShowDistance = 200;
 
-    // basic scroll animation
     let scrollInterval,
         scrollDiff = scrollVal = 0,
         btnTopShown = false;
@@ -13,6 +13,7 @@
         return document.documentElement.scrollTop || document.body.scrollTop;
     }
 
+    // basic scroll animation
     const scroller = (toPos = 0) => {
         const docScroll = docScrollTop();
         // get difference between current position and destination
@@ -43,14 +44,28 @@
         }
     }
 
+
     /* Skills Chart */
+
     const $skills = document.getElementsByClassName('skill-level');
 
+    let skillsArr = [],
+        currentSkill = 0;
+
     for (var $skill of $skills) {
-        const skillLevel = parseFloat($skill.textContent),
-              $skillBar = $skill.firstElementChild;
-        $skillBar.style.width = skillLevel * 10 + '%';
+        let skill = {};
+        skill.skillLevel = parseFloat($skill.textContent) || 1;
+        skill.skillBar = $skill.firstElementChild;
+        skillsArr.push(skill);
     }
 
+    const populateSkillBars = setInterval(() => {
+        let skill = skillsArr[currentSkill];
+        skill.skillBar.style.width = skill.skillLevel * 10 + '%';
+        currentSkill++;
+        if (currentSkill === skillsArr.length) {
+            clearInterval(populateSkillBars);
+        }
+    }, 250);
 
 })();

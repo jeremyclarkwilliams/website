@@ -83,6 +83,10 @@ button {
     padding: 0;
 }
 
+.sub-text {
+    font-size: .8em;
+}
+
 .heading {
     color: $white;
     font-family: $font-primary;
@@ -234,8 +238,4 @@ button {
 
 .sr-only {
     display: none;
-}
-
-.hidden {
-    visibility: hidden;
 }

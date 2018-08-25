@@ -14,19 +14,15 @@
 
     th {
         font-size: 2rem;
-        padding: 1rem 3rem;
+        padding: 1rem 4rem;
     }
 
     td {
         padding: 3rem 3rem;
     }
 
-    .skill-name,
-    .skill-level {
-
-    }
-
     .skill-name {
+        font-weight: $font-regular;
         padding-right: 4rem;
         text-align: right;
         white-space: nowrap;
@@ -42,6 +38,8 @@
             height: 5 / 3 * 1rem;
             max-width: calc(100% - 3rem);
             position: relative;
+            transition: width 1s;
+            width: 0;
 
             &:after {
                 border: .5rem solid $white;
