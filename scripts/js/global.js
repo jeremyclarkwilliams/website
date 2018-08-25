@@ -13,7 +13,7 @@
         return document.documentElement.scrollTop || document.body.scrollTop;
     }
 
-    const scroller = (toPos) => {
+    const scroller = (toPos = 0) => {
         const docScroll = docScrollTop();
         // get difference between current position and destination
         scrollDiff = Math.abs(docScroll - toPos);
@@ -29,11 +29,11 @@
     $btnTop.onclick = (e) => {
         e.preventDefault();
         $btnTop.blur();
-        scrollInterval = setInterval(() => { scroller(0); }, 20);
+        scrollInterval = setInterval(scroller, 20);
     }
 
     window.onscroll = (e) => {
-        // Show or hide back to top button 
+        // show or hide back to top button 
         if (btnTopShown && docScrollTop() <= btnShowDistance) {
             $btnTop.classList.remove('show');
             btnTopShown = false;
@@ -42,5 +42,15 @@
             btnTopShown = true;
         }
     }
+
+    /* Skills Chart */
+    const $skills = document.getElementsByClassName('skill-level');
+
+    for (var $skill of $skills) {
+        const skillLevel = parseFloat($skill.textContent),
+              $skillBar = $skill.firstElementChild;
+        $skillBar.style.width = skillLevel * 10 + '%';
+    }
+
 
 })();

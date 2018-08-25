@@ -16,11 +16,11 @@
             <tbody>
                 <tr>
                     <td class="skill-name">Semantic HTML</td>
-                    <td class="skill-level"><span class="bar" style="width: 90%;">9/10</span></td>
+                    <td class="skill-level"><span class="bar">9</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">SCSS/CSS3</td>
-                    <td class="skill-level"><span class="bar" style="width: 60%;">9/10</span></td>
+                    <td class="skill-level"><span class="bar">9</span></td>
                 </tr>
             </tbody>
         </table>

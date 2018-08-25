@@ -196,6 +196,10 @@ button {
     transition: all .25s;
     z-index: 10;
 
+    @media (max-width: $screen-xs) {
+        right: 4rem;
+    }
+
     &:hover,
     &:focus {
 
@@ -210,17 +214,13 @@ button {
         @media (max-width: $screen-xs) {
             bottom: 2rem;
         }
-    }
 
-    @media (max-width: $screen-xs) {
-        right: 4rem;
-    }
+        svg {
+            @include filter-drop-shadow( -1rem -1rem 0 rgba($black, .1) );
 
-    svg {
-        @include filter-drop-shadow( -1rem -1rem 0 rgba($black, .1) );
-
-        @media (max-width: $screen-xs) {
-            @include filter-drop-shadow( -.5rem -.5rem 0 rgba($black, .1) );
+            @media (max-width: $screen-xs) {
+                @include filter-drop-shadow( -.5rem -.5rem 0 rgba($black, .1) );
+            }
         }
     }
 }
