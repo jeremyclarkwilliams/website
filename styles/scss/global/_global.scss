@@ -242,6 +242,11 @@ button {
     svg {
         -webkit-filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) ); 
             filter: drop-shadow( -1rem -1rem 0 rgba($black, .1) );
+
+        @media (max-width: $screen-xs) {
+            -webkit-filter: drop-shadow( -.5rem -.5rem 0 rgba($black, .1) ); 
+                filter: drop-shadow( -.5rem -.5rem 0 rgba($black, .1) );
+        }
     }
 }
 
