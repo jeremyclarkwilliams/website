@@ -1,17 +1,13 @@
 html {
     font: 6px/1 $font-secondary;
     letter-spacing: 1px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
-    box-sizing: border-box;
-    height: 100vh;
+    background: $white;
     padding: 4rem;
-    position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 
     @media (max-width: $screen-xs) {
         padding: 2rem;
