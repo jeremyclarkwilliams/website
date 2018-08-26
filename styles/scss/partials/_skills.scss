@@ -15,10 +15,20 @@
     th {
         font-size: 2rem;
         padding: 1rem 3rem;
+
+        @media (max-width: $screen-xs) {
+            font-size: 1.7rem;
+            padding: 1rem 2rem;
+            padding-left: 0;
+        }
     }
 
     td {
         padding: 3rem 3rem;
+
+        @media (max-width: $screen-xs) {
+            padding: 2rem;
+        }
     }
 
     .skill-name {
@@ -26,11 +36,21 @@
         padding-right: 4rem;
         text-align: right;
         white-space: nowrap;
+
+        @media (max-width: $screen-xs) {
+            padding-right: 2rem;
+            white-space: normal;
+        }
     }
 
     .skill-level {
         padding-right: 6rem;
         width: 100%;
+
+        @media (max-width: $screen-xs) {
+            padding-left: 0;
+            padding-right: 4rem;
+        }
 
         .bar {
             background: linear-gradient(90deg, rgba($white, 0) 0%, rgba($white, 1) 100%);
@@ -40,6 +60,10 @@
             position: relative;
             transition: width 1s;
             width: 0;
+
+            @media (max-width: $screen-xs) {
+                height: 1rem;
+            }
 
             &:after {
                 border: .5rem solid $white;
@@ -52,6 +76,12 @@
                 top: 50%;
                 transform: translateY(-50%);
                 width: 3.5rem;
+
+                @media (max-width: $screen-xs) {
+                    height: 2.5rem;
+                    right: -2rem;
+                    width: 2.5rem;
+                }
             }
         }
     }

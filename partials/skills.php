@@ -67,10 +67,6 @@
                     <td class="skill-level"><span class="bar">4</span></td>
                 </tr>
                 <tr>
-                    <td class="skill-name">Adobe Photoshop<br />&amp; Illustrator</td>
-                    <td class="skill-level"><span class="bar">7</span></td>
-                </tr>
-                <tr>
                     <td class="skill-name">Gulp</td>
                     <td class="skill-level"><span class="bar">2</span></td>
                 </tr>
@@ -89,6 +85,10 @@
                 <tr>
                     <td class="skill-name">MySQL</td>
                     <td class="skill-level"><span class="bar">2</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Adobe Photoshop<br />&amp; Illustrator</td>
+                    <td class="skill-level"><span class="bar">7</span></td>
                 </tr>
                 <!-- <tr>
                     <td class="skill-name">Skill</td>
