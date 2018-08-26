@@ -14,7 +14,7 @@
 
     th {
         font-size: 2rem;
-        padding: 1rem 4rem;
+        padding: 1rem 3rem;
     }
 
     td {
@@ -29,14 +29,14 @@
     }
 
     .skill-level {
+        padding-right: 6rem;
         width: 100%;
 
         .bar {
-            background: linear-gradient(90deg, transparent 0%, $white 100%);
+            background: linear-gradient(90deg, rgba($white, 0) 0%, rgba($white, 1) 100%);
             display: block;
             font-size: 0;
             height: 5 / 3 * 1rem;
-            max-width: calc(100% - 3rem);
             position: relative;
             transition: width 1s;
             width: 0;

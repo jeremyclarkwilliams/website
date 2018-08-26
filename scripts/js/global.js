@@ -33,39 +33,57 @@
         scrollInterval = setInterval(scroller, 20);
     }
 
-    window.onscroll = (e) => {
-        // show or hide back to top button 
-        if (btnTopShown && docScrollTop() <= btnShowDistance) {
-            $btnTop.classList.remove('show');
-            btnTopShown = false;
-        } else if (!btnTopShown && docScrollTop() > btnShowDistance) {
-            $btnTop.classList.add('show');
-            btnTopShown = true;
-        }
-    }
-
 
     /* Skills Chart */
 
-    const $skills = document.getElementsByClassName('skill-level');
+    const $skills = document.getElementsByClassName('skill-level'),
+          $skillsSection = document.getElementById('section-skills');
 
     let skillsArr = [],
-        currentSkill = 0;
+        skillCounter = 0,
+        skillsRendered = false,
+        skillBarInterval;
 
     for (var $skill of $skills) {
         let skill = {};
-        skill.skillLevel = parseFloat($skill.textContent) || 1;
-        skill.skillBar = $skill.firstElementChild;
+        skill.level = parseFloat($skill.textContent) || 1;
+        skill.bar = $skill.firstElementChild;
         skillsArr.push(skill);
     }
 
-    const populateSkillBars = setInterval(() => {
-        let skill = skillsArr[currentSkill];
-        skill.skillBar.style.width = skill.skillLevel * 10 + '%';
-        currentSkill++;
-        if (currentSkill === skillsArr.length) {
-            clearInterval(populateSkillBars);
+    const setSkillBarWidth = () => {
+        let skill = skillsArr[skillCounter];
+        // adjust level so lower levels appear more accurate in chart
+        // 1 -> 0.5, 2 -> 1.5556, ... 9 -> 8.9444, 10 -> 10
+        let levelAdj = skill.level - (10 - skill.level) * (5 / 90);
+        skill.bar.style.width = levelAdj * 10 + '%';
+        skillCounter++;
+        if (skillCounter === skillsArr.length) {
+            clearInterval(skillBarInterval);
         }
-    }, 250);
+    }
+
+
+    /* Window Stuff */
+
+    const windowHt = window.innerHeight;
+
+    const scrollListener = (e) => {
+        // show or hide back to top button 
+        if (btnTopShown && docScrollTop() <= btnShowDistance) {
+            btnTopShown = false;
+            $btnTop.classList.remove('show');
+        } else if (!btnTopShown && docScrollTop() > btnShowDistance) {
+            btnTopShown = true;
+            $btnTop.classList.add('show');
+        }
+        // render skills chart when in view
+        if (!skillsRendered && docScrollTop() > ($skillsSection.offsetTop - windowHt / 2)) {
+            skillsRendered = true;
+            skillBarInterval = setInterval(setSkillBarWidth, 100);
+        }
+    }
+
+    window.addEventListener('scroll', scrollListener);
 
 })();

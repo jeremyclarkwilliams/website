@@ -1,4 +1,4 @@
-<section class="section section-skills section--mint">
+<section class="section section-skills section--mint" id="section-skills">
     <div class="container">
         <h3 class="heading">Technical Skills</h3>
         <table class="table-skills" cellpadding="0" cellspacing="0">
@@ -64,7 +64,7 @@
                 </tr>
                 <tr>
                     <td class="skill-name">GIT</td>
-                    <td class="skill-level"><span class="bar">5</span></td>
+                    <td class="skill-level"><span class="bar">4</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">Adobe Photoshop<br />&amp; Illustrator</td>
@@ -72,7 +72,7 @@
                 </tr>
                 <tr>
                     <td class="skill-name">Gulp</td>
-                    <td class="skill-level"><span class="bar">3</span></td>
+                    <td class="skill-level"><span class="bar">2</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">Angular</td>
@@ -83,7 +83,7 @@
                     <td class="skill-level"><span class="bar">1</span></td>
                 </tr>
                 <tr>
-                    <td class="skill-name">MongoDB &amp; Mongoose</td>
+                    <td class="skill-name">MongoDB<br /><span class="sub-text">(Mongoose)</span></td>
                     <td class="skill-level"><span class="bar">1</span></td>
                 </tr>
                 <tr>
@@ -97,7 +97,7 @@
             </tbody>
         </table>
 
-        <p><strong>Additional Experience with:</strong> Agile (Scrum and Kanban), JIRA, Jasmine</p>
+        <p><strong>Additional experience with:</strong> Agile (Scrum and Kanban), JIRA, Jasmine</p>
 
         <!-- <p><strong>Advanced:</strong> Semantic HTML, SCSS/CSS3, jQuery, image optimization, accessibility, SEO</p>
         <p><strong>Intermediate:</strong> JavaScript, ES6, React, Rails, Ruby, PHP, Wordpress, CoffeeScript, A/B testing
