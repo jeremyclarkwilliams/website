@@ -1,5 +1,8 @@
 .main-footer {
     background: saturate(lighten($brown, 20%), 10%);
+    background-image: url('../../images/bg-pattern-03.png');
+    background-position: center top;
+    background-repeat: repeat;
     color: lighten($orange, 30%);
     font-size: 2rem;
     font-weight: $font-regular;
