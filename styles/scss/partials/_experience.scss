@@ -43,7 +43,7 @@
         padding-bottom: 8rem;
 
         @media (max-width: $screen-xs) {
-            padding-bottom: 4rem;
+            padding-bottom: 6rem;
         }
     }
 
@@ -58,6 +58,7 @@
 
         @media (max-width: $screen-xs) {
             font-size: 2.5rem;
+            margin: 0;
         }
     }
 
@@ -83,6 +84,7 @@
         margin-bottom: 0;
 
         @media (max-width: $screen-xs) {
+            margin-top: 1rem;
             padding-left: 3rem;
         }
     }
