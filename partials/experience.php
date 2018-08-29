@@ -76,6 +76,7 @@
                 <li>spearheaded development of A/B/n tests across sites using Optimizely and Maxymiser</li>
                 <li>managed close-knit relationships with designers on fluid and static pages using HTML, CSS, and JavaScript</li>
                 <li>recipient of achievements in 2012 and 2014 acknowledging above-and-beyond performance among hundreds of employees</li>
+                <li><a href="//ticketmaster.com" target="_blank" rel="noopener noreferrer">ticketmaster.com</a></li>
             </ul>
         </article>
 
