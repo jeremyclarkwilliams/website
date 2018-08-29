@@ -90,6 +90,10 @@
                     <td class="skill-name">Adobe Photoshop<br />&amp; Illustrator</td>
                     <td class="skill-level"><span class="bar">7</span></td>
                 </tr>
+                <tr>
+                    <td class="skill-name">Sketch</td>
+                    <td class="skill-level"><span class="bar">2.5</span></td>
+                </tr>
                 <!-- <tr>
                     <td class="skill-name">Skill</td>
                     <td class="skill-level"><span class="bar">(value)</span></td>
@@ -102,7 +106,7 @@
         <!-- <p><strong>Advanced:</strong> Semantic HTML, SCSS/CSS3, jQuery, image optimization, accessibility, SEO</p>
         <p><strong>Intermediate:</strong> JavaScript, ES6, React, Rails, Ruby, PHP, Wordpress, CoffeeScript, A/B testing
         (Optimizely, Maxymiser), GIT, SVN, Agile (Scrum and Kanban), JIRA, Adobe Photoshop and Illustrator</p>
-        <p><strong>Basic:</strong> Angular, Gulp, Node, Express, MongoDB, Mongoose, MySQL, Jasmine</p> -->
+        <p><strong>Basic:</strong> Angular, Gulp, Node, Express, MongoDB, Mongoose, MySQL, Jasmine, Sketch</p> -->
         <!--<p>An Event Apart 2016, San Francisco, attendee</p>-->
     </div>
 </section>
