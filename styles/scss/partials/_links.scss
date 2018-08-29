@@ -1,8 +1,12 @@
 .section-links {
+    box-shadow: 0 0 0 .5rem rgba(0,0,0,.1) inset;
+    margin: 0 -1rem;
     padding-bottom: 4rem;
     padding-top: 4rem;
 
     @media (max-width: $screen-xs) {
+        box-shadow: none;
+        margin: 0;
         padding: 2rem;
     }
 }

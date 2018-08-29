@@ -44,19 +44,19 @@
                 </tr>
                 <tr>
                     <td class="skill-name">React</td>
-                    <td class="skill-level"><span class="bar">4</span></td>
-                </tr>
-                <tr>
-                    <td class="skill-name">Ruby/Rails</td>
                     <td class="skill-level"><span class="bar">4.5</span></td>
                 </tr>
                 <tr>
+                    <td class="skill-name">Ruby/Rails</td>
+                    <td class="skill-level"><span class="bar">4</span></td>
+                </tr>
+                <tr>
                     <td class="skill-name">PHP</td>
-                    <td class="skill-level"><span class="bar">6</span></td>
+                    <td class="skill-level"><span class="bar">5</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">Wordpress</td>
-                    <td class="skill-level"><span class="bar">5</span></td>
+                    <td class="skill-level"><span class="bar">4.5</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">A/B Testing<br /><span class="sub-text">(Optimizely, Maxymiser)</span></td>

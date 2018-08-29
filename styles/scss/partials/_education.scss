@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (max-width: $screen-xs) {
+        background-image: url('../../images/bg-fullsize-02-mobile.png');
+    }
+
     .container {
         display: grid;
         grid-template-columns: auto 1fr;
