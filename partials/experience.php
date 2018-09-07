@@ -5,7 +5,7 @@
         <article class="job">
             <h4 class="title">Front-End Software Engineer, Zoe Media Group <span class="date">August 2017 - May 2018</span></h4>
             <ul class="tasks">
-                <li>maintained and enhanced front-end templates for Rachel Zoe’s online properties: The Zoe Report, Box of Style, Shop Rachel Zoe</li>
+                <li>maintained and updated front-end templates for Rachel Zoe’s online properties: The Zoe Report, Box of Style, Shop Rachel Zoe</li>
                 <li>implemented site-wide redesign of The Zoe Report in an expedited timeframe – 4 weeks for MVP, 3 more weeks for further updates
                     <ul class="sub-tasks">
                         <li>average time on page increased by 88.54%, bounce rate decreased by 30.54%, and exit rate decreased by 129%</li>
