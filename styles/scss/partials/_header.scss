@@ -14,14 +14,30 @@
             font-size: 4rem;
         }
 
-        img {
-            margin-right: 5rem;
+        img,
+        svg {
+            height: 100%;
             vertical-align: middle;
             width: 10rem;
 
             @media (max-width: $screen-xs) {
-                margin-right: 3rem;
                 width: 6rem;
+            }
+        }
+
+        svg {
+            margin-right: 3rem;
+
+            @media (max-width: $screen-xs) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        img {
+            margin-right: 5rem;
+
+            @media (max-width: $screen-xs) {
+                margin-right: 3rem;
             }
         }
     }
