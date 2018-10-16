@@ -3,6 +3,13 @@
         <h3 class="heading">Professional Experience</h3>
 
         <article class="job">
+            <h4 class="title">Front-End Engineer, Tamara Mellon <span class="date">October 2018 - Present</span></h4>
+            <ul class="tasks">
+                <li><a href="//tamaramellon.com/" target="_blank" rel="noopener noreferrer">tamaramellon.com</a></li>
+            </ul>
+        </article>
+
+        <article class="job">
             <h4 class="title">Front-End Software Engineer, Zoe Media Group <span class="date">August 2017 - May 2018</span></h4>
             <ul class="tasks">
                 <li>maintained and updated front-end templates for Rachel Zoe’s online properties: The Zoe Report, Box of Style, Shop Rachel Zoe</li>
