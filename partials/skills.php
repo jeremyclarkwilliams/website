@@ -1,4 +1,4 @@
-<section class="section section-skills section--mint" id="section-skills">
+<section class="section section-skills section--black" id="section-skills">
     <div class="container">
         <h3 class="heading">Technical Skills</h3>
         <table class="table-skills" cellpadding="0" cellspacing="0">
@@ -23,6 +23,14 @@
                     <td class="skill-level"><span class="bar">9.5</span></td>
                 </tr>
                 <tr>
+                    <td class="skill-name">JavaScript<br /><span class="sub-text">&amp; CoffeeScript, ES6</span></td>
+                    <td class="skill-level"><span class="bar">8</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">React</td>
+                    <td class="skill-level"><span class="bar">8</span></td>
+                </tr>
+                <tr>
                     <td class="skill-name">jQuery</td>
                     <td class="skill-level"><span class="bar">8.5</span></td>
                 </tr>
@@ -35,20 +43,8 @@
                     <td class="skill-level"><span class="bar">8</span></td>
                 </tr>
                 <tr>
-                    <td class="skill-name">JavaScript<br /><span class="sub-text">&amp; CoffeeScript</span></td>
-                    <td class="skill-level"><span class="bar">7</span></td>
-                </tr>
-                <tr>
-                    <td class="skill-name">ES6</td>
-                    <td class="skill-level"><span class="bar">5</span></td>
-                </tr>
-                <tr>
-                    <td class="skill-name">React</td>
-                    <td class="skill-level"><span class="bar">4.5</span></td>
-                </tr>
-                <tr>
                     <td class="skill-name">Ruby/Rails</td>
-                    <td class="skill-level"><span class="bar">4</span></td>
+                    <td class="skill-level"><span class="bar">3</span></td>
                 </tr>
                 <tr>
                     <td class="skill-name">PHP</td>
@@ -59,7 +55,7 @@
                     <td class="skill-level"><span class="bar">4.5</span></td>
                 </tr>
                 <tr>
-                    <td class="skill-name">A/B Testing<br /><span class="sub-text">(Optimizely, Maxymiser)</span></td>
+                    <td class="skill-name">A/B Testing<br /><span class="sub-text">VWO, Google Optimize,<br />Optimizely, Maxymiser</span></td>
                     <td class="skill-level"><span class="bar">7</span></td>
                 </tr>
                 <tr>
@@ -91,17 +87,17 @@
                     <td class="skill-level"><span class="bar">7</span></td>
                 </tr>
                 <tr>
-                    <td class="skill-name">Sketch</td>
-                    <td class="skill-level"><span class="bar">2.5</span></td>
+                    <td class="skill-name">Sketch<br /><span class="sub-text">&amp; Zeplin</span></td>
+                    <td class="skill-level"><span class="bar">3</span></td>
                 </tr>
                 <!-- <tr>
-                    <td class="skill-name">Skill</td>
-                    <td class="skill-level"><span class="bar">(value)</span></td>
+                    <td class="skill-name">{{ skill }}</td>
+                    <td class="skill-level"><span class="bar">{{ value }}</span></td>
                 </tr> -->
             </tbody>
         </table>
 
-        <p><strong>Additional experience with:</strong> Agile (Scrum and Kanban), JIRA, Jasmine</p>
+        <p><strong>Additional experience with:</strong> Agile (Scrum and Kanban), Shopify/Liquid, JIRA, Asana</p>
 
         <!-- <p><strong>Advanced:</strong> Semantic HTML, SCSS/CSS3, jQuery, image optimization, accessibility, SEO</p>
         <p><strong>Intermediate:</strong> JavaScript, ES6, React, Rails, Ruby, PHP, Wordpress, CoffeeScript, A/B testing

@@ -1,4 +1,4 @@
-<section class="section section-links section--cream">
+<section class="section section-links section--lightgray">
     <div class="container">
         <ul class="links">
             <li><a href="mailto:jeremy@jeremyclarkwilliams.com">Email</a></li>

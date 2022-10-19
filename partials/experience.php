@@ -1,11 +1,20 @@
-<section class="section section-experience section--purple">
+<section class="section section-experience section--midnightblue">
     <div class="container">
         <h3 class="heading">Professional Experience</h3>
 
         <article class="job">
-            <h4 class="title">Front-End Engineer, Tamara Mellon <span class="date">October 2018 - Present</span></h4>
+            <h4 class="title">Front-End Engineer, Tamara Mellon Brand <span class="date">October 2018 - Present</span></h4>
             <ul class="tasks">
-                <li><a href="//tamaramellon.com/" target="_blank" rel="noopener noreferrer">tamaramellon.com</a></li>
+                <li>built from scratch and owned headless e-commerce platform with React on Gatsby, supported on the back-end by Shopify Plus, with Contentful CMS, Loop Returns "shop on site", and Algolia search and recommendations integrations</li>
+                <li>collaborated with other teams to create various tools and front-end solutions, and support third party software integrations
+                    <ul class="sub-tasks">
+                        <li>coded React-based product search widget for Client Services to live within Live Person chat software, which ingested in-house API for data</li>
+                        <li>built bot with Live Person's proprietary tools to automate sending of product information to users who submitted request via QR codes at retail locations</li>
+                    </ul>
+                </li>
+                <li>implemented and advised on A/B/n tests across site with VWO and Google Optimize</li>
+                <li>tech stack: React, Gatsby, SCSS modules, GraphQL, Shopify Liquid</li>
+                <li><a href="//www.tamaramellon.com/" target="_blank" rel="noopener noreferrer">tamaramellon.com</a></li>
             </ul>
         </article>
 
@@ -28,7 +37,7 @@
                         <li>percentage of total transaction sales increased by 500-700% (from 0.06-0.1% to 0.3-0.7%)</li>
                     </ul>
                 </li>
-                <li>tech stack: PHP, SCSS, jQuery, Wordpress, GitHub</li>
+                <li>tech stack: PHP, SCSS, jQuery, Wordpress</li>
                 <li>Online publication: <a href="//thezoereport.com/" target="_blank" rel="noopener noreferrer">thezoereport.com</a></li>
                 <li>Seasonal subscription product: <a href="//boxofstyle.com/" target="_blank" rel="noopener noreferrer">boxofstyle.com</a></li>
                 <li>E-commerce site: <a href="//shoprachelzoe.com/" target="_blank" rel="noopener noreferrer">shoprachelzoe.com</a></li>
@@ -55,9 +64,9 @@
                 <li>standardized styles and HTML structure in collaboration with UX/UI designers and other developers</li>
                 <li>migrated templates and content site-wide from Alchemy CMS to Contentful CMS</li>
                 <li>created and modified CMS templates, enabling easy updates and content-specific campaigns</li>
-                <li>implemented and advised on A/B/n tests across site</li>
+                <li>implemented and advised on A/B/n tests across site with Optimizely</li>
                 <li>updated <a href="//www.lootcrate.com/notfound" target="_blank" rel="noopener noreferrer">404 page</a> with a delightful, custom, Space Invaders-inspired game</li>
-                <li>tech stack: Ruby on Rails, SCSS, CoffeeScript, jQuery, GitHub</li>
+                <li>tech stack: Ruby on Rails, SCSS, CoffeeScript, jQuery</li>
                 <li><a href="//lootcrate.com" target="_blank" rel="noopener noreferrer">lootcrate.com</a></li>
             </ul>
         </article>

@@ -1,4 +1,4 @@
-<section class="section section-education section--cream">
+<section class="section section-education section--lightgray">
     <div class="container">
         <div class="content">
             <h3 class="heading">Education</h3>

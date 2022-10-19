@@ -48,12 +48,13 @@
         font-weight: $font-regular;
 
         .heading {
-            color: saturate(lighten($brown, 20%), 20%);
+            // color: saturate(lighten($brown, 20%), 20%);
+            color: $blue;
         }
 
         a {
-            border-color: $brown;
-            color: $brown;
+            border-color: $blue;
+            color: $blue;
         }
     }
 
@@ -92,6 +93,83 @@
         a {
             border-color: $white;
             color: $white;
+        }
+    }
+
+    &--mediumgray {
+        background: $mediumgray;
+        color: $white;
+        font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
+
+        .heading {
+            color: lighten($pink, 10%);
+        }
+
+        a {
+            border-color: lighten($pink, 40%);
+            color: lighten($pink, 40%);
+        }
+    }
+
+    &--lightgray {
+        background: $lightgray;
+        color: $black;
+        font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
+
+        .heading {
+            // color: lighten($pink, 10%);
+            color: $blue;
+        }
+
+        a {
+            border-color: $blue;
+            color: $blue;
+        }
+    }
+
+    &--midnightblue {
+        background: $midnightblue;
+        color: $white;
+        font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
+
+        .heading {
+            color: lighten($pink, 10%);
+        }
+
+        a {
+            border-color: $mint;
+            color: $mint;
+        }
+    }
+
+    &--black {
+        background: $darkblue;
+        color: $white;
+        font-weight: $font-light;
+
+        @media (max-width: $screen-xs) {
+            font-weight: $font-regular;
+        }
+
+        .heading {
+            color: lighten($lightblue, 10%);
+        }
+
+        a {
+            border-color: $mint;
+            color: $mint;
         }
     }
 }
