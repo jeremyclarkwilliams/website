@@ -35,6 +35,10 @@
                     <td class="skill-level"><span class="bar">8.5</span></td>
                 </tr>
                 <tr>
+                    <td class="skill-name">TypeScript</td>
+                    <td class="skill-level"><span class="bar">2</span></td>
+                </tr>
+                <tr>
                     <td class="skill-name">Image Optimization</td>
                     <td class="skill-level"><span class="bar">9</span></td>
                 </tr>
